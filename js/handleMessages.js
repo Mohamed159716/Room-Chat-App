@@ -24,7 +24,7 @@ const sendMessage = async () => {
 
     publishEvent(bodyData, "send-message");
 
-    saveMessages({ id, name, message: messageContent });
+    // saveMessages({ id, name, message: messageContent });
 
     resetCounter();
 };

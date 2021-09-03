@@ -7,7 +7,7 @@ channel.bind("send-message", function (data) {
 
     fetchMessage(dataObj);
 
-    // saveMessages(dataObj); // Save Message in LocalStorage.
+    saveMessages(dataObj); // Save Message in LocalStorage.
 
     scrollToBottom();
     if (dataObj.id === id && sendingMessageLoader?.length > 0) {
