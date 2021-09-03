@@ -9,7 +9,7 @@ const pusherSubscription = (channelName) => {
     channel = pusher.subscribe(channelName);
 
     const script = document.createElement("script");
-    script.setAttribute("src", "js/event.js");
+    script.setAttribute("src", "js/pusherEvents.js");
     body.insertAdjacentElement("beforeend", script);
 };
 

@@ -2,6 +2,8 @@
 const saveMessages = ({ id, name, message }) => {
     let data = JSON.parse(window.localStorage.getItem("data"));
     let newMessage = { id, name, message };
+    console.log(newMessage);
+    console.log(data.messages);
     data = { ...data, messages: [...data.messages, newMessage] };
     window.localStorage.setItem("data", JSON.stringify(data));
 };
