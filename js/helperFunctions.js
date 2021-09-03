@@ -9,10 +9,7 @@ const pusherSubscription = (channelName) => {
     channel = pusher.subscribe(channelName);
 
     const script = document.createElement("script");
-    script.setAttribute(
-        "src",
-        "https://cdn.jsdelivr.net/gh/Mohamed159716/Room-Chat-App/event.js"
-    );
+    script.setAttribute("src", "js/event.js");
     body.insertAdjacentElement("beforeend", script);
 };
 
